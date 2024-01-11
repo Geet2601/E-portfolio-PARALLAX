@@ -19,15 +19,11 @@ closed: {
         type:"spring",
         stiffness:400,
         damping: 40,
-
 },
 },
 };
 const Sidebar = () => {
 const [open, setOpen] = useState(false);
-
-
-
 return  (
 <motion.div className="sidebar"
 animate={open ? "open" : "closed"}>
@@ -37,9 +33,6 @@ animate={open ? "open" : "closed"}>
 <ToggleButton setOpen={setOpen}/> 
 </motion.div>
 );
-
-
 };
 
 export default Sidebar;
-
